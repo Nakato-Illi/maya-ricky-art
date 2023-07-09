@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+:root {
+    --col-1-green: #6b9124;
+    --col-2-blue: #3e629c;
+    --col-3-baige: #f4cf67;
+
+    border-style: none;
+}
+
+/*----------------------------------HOME---------------------------------------*/
+
+.margin-top-content {
+    margin: 2em 0 2em;
+}
+
+#sticky-nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.index-hero {
+    margin-top: 50px;
+    height: 80vh;
+    width: 100%;
+    background-color:#ffffff;
+    background-image: url("/storage/app/public/home_img/mr-hero1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /*border-radius: 1%;*/
+    box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.3);
+}
+
+.about-container {
+    margin: 7em 0 7em;
+    display: flex;
+}
+
+.about-container-text {
+    padding: 1em;
+    height: 50vh;
+    background-color: var(--col-2-blue);
+    color: #ffffff;
+}
+
+.about-container-img {
+
+    background-image: url("/storage/app/public/home_img/weber-placeholder.jpg");
+    height: 50vh;
+    width: 50vw;
+    min-width: 200px;
+    margin-left: 2em;
+}
+
+/*-------------------------------Contact------------------------------------------*/
+
+.contact-container {
+    box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.3);
+    background-color:#ffffff;
+    height: 80vh;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    min-width: 30em;
+    font-size: 1.2em;
+}
+form input {
+    height: 2em;
+    margin-bottom: 1em;
+}
+
+form input:focus {
+    border: none;
+    border-collapse: collapse;
+    border-color: #6b9124;
+}
+
+#message {
+    height: 40vh;
+    margin-bottom: 2em;
+}
+
+.container-sub-del {
+    display: flex;
+    align-self: end;
+}
+
+.container-sub-del input {
+    width: 4em;
+    border-radius: 0;
+}
+
+.container-sub-del input:hover {
+    width: 4em;
+    background-color: var(--col-2-blue);
+    color:#ffffff;
+}
+
+
+/*--------------------------------------    GALLERY    --------------------------------------*/
+
+.gallery-container {
+    display: flex;
+}
+
+.left-container-gal {
+    flex-grow: 3;
+}
+
+.right-container-gal {
+    flex-grow: 0;
+    background-color: var(--col-3-baige);
+    width: 250px;
+}
+
+.gallery-container-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.but-margin {
+    margin-bottom: 5em;
+}
+
+.gal-but-con button{
+    /*background-color: rgba(26, 32, 44, 0.77);*/
+    /*color: var(--col-3-baige);*/
+    box-shadow: 0px 3px 24px -10px rgba(0,0,0,0.72);
+    margin: 10px 0px;
+    padding: 5px;
+}
+.gal-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.2em;
+    margin: 10px 0 1px 0px;
+}
+.gallery-img {
+    width: 270px;
+    height: 250px;
+}
